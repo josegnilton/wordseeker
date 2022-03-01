@@ -58,7 +58,7 @@ export const WORDS = [
   'eficaz',
   'outrem',
   'júbilo',
-  'ímpeto',
+  'impeto',
   'glória',
   'alento',
   'embora',
