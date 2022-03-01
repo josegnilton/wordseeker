@@ -1,4 +1,4 @@
-export const GAME_TITLE = 'Word Seekler'
+export const GAME_TITLE = 'Word Seeker'
 
 export const WIN_MESSAGES = ['Parabéns!', 'Perfeito!', 'Você Conseguiu!']
 export const GAME_COPIED_MESSAGE = 'Jogo copiado'
