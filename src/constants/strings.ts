@@ -1,27 +1,28 @@
-export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
+export const GAME_TITLE = 'Word Seekler'
 
-export const WIN_MESSAGES = ['Great Job!', 'Awesome', 'Well done!']
-export const GAME_COPIED_MESSAGE = 'Game copied to clipboard'
-export const NOT_ENOUGH_LETTERS_MESSAGE = 'Not enough letters'
-export const WORD_NOT_FOUND_MESSAGE = 'Word not found'
+export const WIN_MESSAGES = ['Parabéns!', 'Perfeito!', 'Você Conseguiu!']
+export const GAME_COPIED_MESSAGE = 'Jogo copiado'
+export const NOT_ENOUGH_LETTERS_MESSAGE = 'Letras Insuficientes'
+export const WORD_NOT_FOUND_MESSAGE = 'Palavra não Encontrada'
 export const HARD_MODE_ALERT_MESSAGE =
-  'Hard Mode can only be enabled at the start!'
+  'O modo difícil só pode ser ativado no começo!'
 export const HARD_MODE_DESCRIPTION =
-  'Any revealed hints must be used in subsequent guesses'
-export const HIGH_CONTRAST_MODE_DESCRIPTION = 'For improved color vision'
+  'Todas as dicas reveladas precisam estar na próxima tentativa'
+export const HIGH_CONTRAST_MODE_DESCRIPTION =
+  'Para auxiliar no contraste de cores'
 export const CORRECT_WORD_MESSAGE = (solution: string) =>
-  `The word was ${solution}`
+  `A palavra era ${solution}`
 export const WRONG_SPOT_MESSAGE = (guess: string, position: number) =>
-  `Must use ${guess} in position ${position}`
+  `Você precisa usar ${guess} na ${position} correta`
 export const NOT_CONTAINED_MESSAGE = (letter: string) =>
-  `Guess must contain ${letter}`
+  `Sua tentativa precisa conter ${letter}`
 export const ENTER_TEXT = 'Enter'
 export const DELETE_TEXT = 'Delete'
-export const STATISTICS_TITLE = 'Statistics'
-export const GUESS_DISTRIBUTION_TEXT = 'Guess Distribution'
-export const NEW_WORD_TEXT = 'New word in'
-export const SHARE_TEXT = 'Share'
-export const TOTAL_TRIES_TEXT = 'Total tries'
-export const SUCCESS_RATE_TEXT = 'Success rate'
-export const CURRENT_STREAK_TEXT = 'Current streak'
-export const BEST_STREAK_TEXT = 'Best streak'
+export const STATISTICS_TITLE = 'Estatísticas'
+export const GUESS_DISTRIBUTION_TEXT = 'Distribuição de Tentativas'
+export const NEW_WORD_TEXT = 'Nova palavra em'
+export const SHARE_TEXT = 'Compartilhar'
+export const TOTAL_TRIES_TEXT = 'Total de Tentativas'
+export const SUCCESS_RATE_TEXT = 'Taxa de Sucesso'
+export const CURRENT_STREAK_TEXT = 'Acertos em Sequência'
+export const BEST_STREAK_TEXT = 'Melhor Sequência'
