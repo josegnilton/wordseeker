@@ -8,13 +8,15 @@ export const shareStatus = (
   lost: boolean,
   isHardMode: boolean,
   isDarkMode: boolean,
-  isHighContrastMode: boolean
+  isHighContrastMode: boolean,
+  siteName: string
 ) => {
   navigator.clipboard.writeText(
     `${GAME_TITLE} ${solutionIndex} ${
       lost ? 'X' : guesses.length
     }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
-      generateEmojiGrid(guesses, getEmojiTiles(isDarkMode, isHighContrastMode))
+      generateEmojiGrid(guesses, getEmojiTiles(isDarkMode, isHighContrastMode)) + '\n' +
+      'jogue em: https://word-seekerz.herokuapp.com'
   )
 }
 

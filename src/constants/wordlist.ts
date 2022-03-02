@@ -29,7 +29,6 @@ export const WORDS = [
   'gentil',
   'hetero',
   'eximio',
-  'boceta',
   'afavel',
   'cliche',
   'adorno',
@@ -1040,5 +1039,16 @@ export const WORDS = [
   'poroso',
   'gestao',
   'pardos',
-  'odiado'
+  'odiado',
+  'tulipa',
+  'punhos',
+  'furada',
+  'furado',
+  'ouvido',
+  'tijolo',
+  'enzima',
+  'tomate',
+  'lancar',
+  'lanche',
+  'jogral'
 ]
