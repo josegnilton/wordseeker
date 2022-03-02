@@ -8,8 +8,7 @@ export const shareStatus = (
   lost: boolean,
   isHardMode: boolean,
   isDarkMode: boolean,
-  isHighContrastMode: boolean,
-  siteName: string
+  isHighContrastMode: boolean
 ) => {
   navigator.clipboard.writeText(
     `${GAME_TITLE} ${solutionIndex} ${
