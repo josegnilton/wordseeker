@@ -1075,5 +1075,12 @@ export const VALID_GUESSES = [
   'remova',
   'vinhos',
   'frutas',
-  'frutos'
+  'frutos',
+  'placar',
+  'trofeu',
+  'banana',
+  'Pipoca',
+  'Ligado',
+  'Biombo',
+  'Beijar',
 ]
