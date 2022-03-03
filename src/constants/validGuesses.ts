@@ -1083,5 +1083,4 @@ export const VALID_GUESSES = [
   'Ligado',
   'Biombo',
   'Beijar',
-  'xinxar',
 ]
