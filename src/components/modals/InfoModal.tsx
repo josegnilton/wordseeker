@@ -8,63 +8,81 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="Como jogar" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+        Adivinhe a palavra em até 7 tentativas. Após cada tentativa, a cor da letra irá mudar para mostrar o quão perto você está de adivinhar a palavra. 
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell
+        <Cell value="A" />
+        <Cell value="B"
           isRevealing={true}
           isCompleted={true}
-          value="W"
-          status="correct"
-        />
+          status="correct" />
         <Cell value="E" />
+        <Cell value="L" />
+        <Cell value="H" />
         <Cell value="A" />
-        <Cell value="R" />
-        <Cell value="Y" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+        A letra B, indicada com a cor verde, está presente na palavra e na posição correta.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
+        <Cell value="B" />
+        <Cell value="R" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="L"
+          value="I"
           status="present"
         />
+        <Cell value="N" />
+        <Cell value="C" />
         <Cell value="O" />
-        <Cell value="T" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+      A letra I, indicada com a cor amarela, está presente na palavra, porém na posição incorreta.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
+        <Cell value="B" />
+        <Cell value="R" />
+        <Cell value="I" />
+        <Cell value="N" />
+        <Cell isRevealing={true} isCompleted={true} value="D" status="absent" />
         <Cell value="A" />
-        <Cell value="G" />
-        <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
-        <Cell value="E" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+      A letra D não está presente na palavra.
+      </p>
+      <br />
+      <hr className='pb-1' />
+      
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+      Os acentos são preenchidos de maneira automática e não são considerados nas dicas.
+      </p>
+      <br />
+
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+      As palavras podem possuir letras repetidas.
+      </p>
+      <br />
+
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+      Todo dia uma nova palavra :)
       </p>
 
+     
+
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
-        love -{' '}
+        Essa é uma versão open-source do jogo de caça-palavras que tanto amamos
+         -{' '}
         <a
           href="https://github.com/cwackerfuss/react-wordle"
           className="underline font-bold"
         >
-          check out the code here
+          Confira o código aqui.
         </a>{' '}
       </p>
     </BaseModal>
