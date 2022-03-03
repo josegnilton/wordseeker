@@ -26,7 +26,8 @@ export const Cell = ({
   const classes = classnames(
     'w-14 h-14 border-solid border-2 flex items-center justify-center mx-0.5 text-4xl font-bold rounded dark:text-white',
     {
-      'bg-white dark:bg-slate- border-slate-200 dark:border-stone-400': !status,
+      'bg-white dark:bg-slate-600 border-slate-400 dark:border-stone-300':
+        !status,
       'border-black dark:border-slate-100': value && !status,
       'absent shadowed bg-slate-400 dark:bg-slate-700 text-white border-slate-400 dark:border-slate-700':
         status === 'absent',
